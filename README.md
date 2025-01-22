@@ -21,7 +21,13 @@ This project uses the VirusTotal API to collect, analyze, and visualize threat i
    git clone https://github.com/your-username/ThreatDashboard.git
    cd ThreatDashboard
 
-2. Create and activate a virtual environment:
+2. Add Your VirusTotal API Key:
+   - Create a file named `virustotal_api_key.txt` in the project folder.
+   - Paste your API key into the file and save it.
+   - **Note**: The file is excluded from version control for security using `.gitignore`.
+
+
+3. Create and activate a virtual environment:
     Windows:
         python -m venv venv
         venv\Scripts\activate
@@ -29,10 +35,10 @@ This project uses the VirusTotal API to collect, analyze, and visualize threat i
         python3 -m venv venv
         source venv/bin/activate
 
-3. Install dependencies:
+4. Install dependencies:
     pip install -r requirements.txt
 
-4. Run the scripts:
+5. Run the scripts:
     Fetch Data:
         python fetch_data.py
     Visualize Data:

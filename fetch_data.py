@@ -1,8 +1,20 @@
 import requests
 import csv
 
-#  VirusTotal API Key
-API_KEY = "4cbea5687359f96fd2effa37de2edec95c3b66fd82c633d2c5b855b69c27fdbf"  # Replace with your actual API key
+import os
+
+# Function to load API key from a file
+def load_api_key():
+    try:
+        with open("virustotal_api_key.txt", "r") as file:
+            return file.read().strip()
+    except FileNotFoundError:
+        raise FileNotFoundError("API key file 'virustotal_api_key.txt' not found. Please add it to the project folder.")
+
+# Use the API key
+API_KEY = load_api_key()
+
+
 BASE_URL = "https://www.virustotal.com/api/v3"
 
 # Function to fetch domain info from VirusTotal
