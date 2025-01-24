@@ -8,6 +8,22 @@ This project uses the VirusTotal API to collect, analyze, and visualize threat i
 - Summarizes results, including malicious, suspicious, and harmless counts.
 - Visualizes the data as a bar chart.
 
+### **Data Overview**
+The bar chart visualization and `domain_data.csv` file provide a breakdown of VirusTotal's analysis for each queried domain. The data includes the following categories:
+
+1. **Malicious**: The number of antivirus engines that flagged the domain as harmful.
+2. **Suspicious**: The number of engines that flagged the domain as potentially harmful or questionable.
+3. **Harmless**: The number of engines that determined the domain was safe.
+4. **Undetected**: The number of engines that did not return a definitive result (neither flagged nor safe).
+5. **Reputation**: An aggregated score from VirusTotal that indicates the domain's overall trustworthiness:
+   - **Positive Scores**: Indicate good reputation (domain is widely considered safe).
+   - **Negative Scores**: Indicate bad reputation (domain is flagged for malicious activity or risks).
+   - **Zero or "Unknown"**: Indicates insufficient data to assess the domain's reputation.
+
+### **Data Location**
+All the collected data is stored in the `data/domain_data.csv` file, which serves as the source for the bar chart visualization.
+
+
 ## Technologies Used
 - **Python**
 - **Libraries**:
