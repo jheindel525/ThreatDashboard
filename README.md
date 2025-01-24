@@ -1,7 +1,7 @@
 # Threat Intelligence Dashboard
 
 ## Overview
-This project uses the VirusTotal API to collect, analyze, and visualize threat intelligence data for multiple domains. It demonstrates skills in API integration, data analysis, and visualization.
+This project uses the VirusTotal API to collect, analyze, and visualize threat intelligence data for multiple domains. Skills involved: API integration, data analysis, and visualization.
 
 ## Features
 - Fetches domain analysis data using the VirusTotal API.
